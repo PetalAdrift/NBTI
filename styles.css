@@ -1,0 +1,255 @@
+body {
+    background-image: url('./img/block.png');
+    background-size: auto;
+    background-repeat: repeat;
+}
+
+@font-face {
+    font-family: "Overpass";
+    src: url('./fonts/Overpass-VariableFont_wght.ttf') format("truetype");
+}
+
+@font-face {
+    font-family: "Overpass-italic";
+    src: url('./fonts//Overpass-Italic-VariableFont_wght.ttf') format("truetype");
+}
+
+.instr {
+    position: absolute;
+    top: 30vh;
+    left: 25vw;
+    height: auto;
+    width: 50vw;
+    background-color: rgb(255, 255, 255);
+    color: rgb(40, 40, 255);
+    opacity: .8;
+}
+
+.instr-title {
+    display: table;
+    margin: 0px auto;
+    font-family: "Overpass-italic", Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.instr-text {
+    position: relative;
+    left: 2vw;
+    width: 46vw;
+    display: block;
+    font-family: "Overpass", Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+}
+
+.instr-btn {
+    position: relative;
+    left: 2vw;
+    width: 46vw;
+    display: inline;
+    background: linear-gradient(45deg, yellow, green, blue, red);
+    background-clip: text;
+    -webkit-background-clip: text;
+    font-family: "Overpass", Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+}
+
+.instr-btn:hover {
+    color: transparent;
+    transition: 1200ms ease;
+}
+
+.questionnaire {
+    display: table;
+    margin: 0px auto;
+    position: relative;
+    top: 5vh;
+    width: 90vw;
+    background-color: #dadbfcb2;
+    font-family: "Overpass", Verdana, Geneva, Tahoma, sans-serif;
+    visibility: hidden;
+}
+
+.q {
+    position: relative;
+    width: 90vw;
+}
+
+.q-title {
+    display: table;
+    margin: 0px auto;
+    font-size: 30px;
+    font-weight: normal;
+}
+
+.q-sub {
+    /* display: inline-block;
+    position: absolute; */
+    position: relative;
+    max-width: 35vw;
+    font-size: 24px;
+}
+
+.q-sub.l {
+    float: left;
+    left: 2vw;
+}
+
+.q-sub.r {
+    float: right;
+    right: 2vw;
+}
+
+.q-sub:after {
+    /*添加⼀个内容*/
+    content: "";
+    /*转换为⼀个块元素*/
+    display: block;
+    /*清除两侧的浮动*/
+    clear: both;
+}
+
+.q-stars {
+    /* position: relative;
+    top: 15vh; */
+    position: relative;
+    margin-top: 15vh;
+    font-size: 48px;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+.q-star {
+    position: absolute;
+    display: inline-block;
+    cursor: pointer;
+    background: conic-gradient(blue, yellow, blue, yellow, blue, yellow);
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.q-star[data-score="-3"] {
+    /* float: left; */
+    left: 10vw;
+}
+
+.q-star[data-score="-2"] {
+    /* float: left; */
+    left: 20vw;
+}
+
+.q-star[data-score="-1"] {
+    /* float: left; */
+    left: 30vw;
+}
+
+.q-star[data-score="0"] {
+    position: relative;
+    display: table;
+    margin: 0px auto;
+}
+
+.q-star[data-score="3"] {
+    /* float: right; */
+    right: 10vw;
+}
+
+.q-star[data-score="2"] {
+    /* float: right; */
+    right: 20vw;
+}
+
+.q-star[data-score="1"] {
+    /* float: right; */
+    right: 30vw;
+}
+
+.q-star:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.filler {
+    position: relative;
+    top: 5vh;
+    height: 5vh;
+}
+
+.submit-btn {
+    position: fixed;
+    top: 50vh;
+    right: 1.5vw;
+    font-size: 44px;
+    font-weight: normal;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+@keyframes rainbow-colors {
+    0% {
+        color: red;
+    }
+
+    14% {
+        color: orange;
+    }
+
+    28% {
+        color: yellow;
+    }
+
+    42% {
+        color: green;
+    }
+
+    56% {
+        color: blue;
+    }
+
+    70% {
+        color: indigo;
+    }
+
+    84% {
+        color: violet;
+    }
+
+    100% {
+        color: red;
+    }
+}
+
+.result {
+    position: absolute;
+    top: 30vh;
+    left: 25vw;
+    height: auto;
+    width: 50vw;
+    background-color: rgb(255, 255, 255);
+    color: rgb(144, 0, 222);
+    opacity: .9;
+    visibility: hidden;
+}
+
+.result-title {
+    display: table;
+    margin: 0px auto;
+    font-family: "Overpass", Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+}
+
+.result-text {
+    position: relative;
+    left: 2vw;
+    width: 46vw;
+    display: block;
+    font-family: "Overpass", Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+}

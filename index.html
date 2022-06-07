@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<head>
+    <title>NBTI Personality Test | 16+ Personalities</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js"></script>
+</head>
+
+<!-- <style>
+    body{
+        background-image: url('./img/block.png');
+        background-size: auto;
+        background-repeat: repeat;
+    }
+</style> -->
+
+<body>
+    <div class="box instr" id="instr">
+        <span class="instr-title">Not-very Believable Type Indicator</span>
+        <br>
+        <span class="instr-text">1. The NBTI test provides unreliable feedback about your personality based on your
+            response to ninety-four trivial questions.</span>
+        <br>
+        <span class="instr-text">2. The test and its administration are not responsible for any result from taking the
+            test</span>
+        <br>
+        <span class="instr-text">3. For each question, you will be asked to choose between "strongly favoring,"
+            "favoring," and "somewhat favoring" one of two options provided. There is no "neutral" option, but you may
+            discard as many questions as you need to.</span>
+        <br>
+        <span class="instr-btn" id="instr-btn" onclick="start()">Start</span>
+    </div>
+
+    <div class="questionnaire" id="questionnaire">
+        <div class="submit-btn" id="submit-btn" onclick="checkSubmit()">
+            <span>√</span>
+        </div>
+        <!-- <div class="q" data-serial="1" data-chosen="0">
+            <span class="q-title">Q.1 Your favorite food is</span>
+            <br>
+            <span class="q-sub l">potato</span>
+            <span class="q-sub r">tomato</span>
+            <div class="q-stars">
+                <span class="q-star" data-score="-3">☆</span>
+                <span class="q-star" data-score="-2">☆</span>
+                <span class="q-star" data-score="-1">☆</span>
+                <span class="q-star" data-score="1">☆</span>
+                <span class="q-star" data-score="2">☆</span>
+                <span class="q-star" data-score="3">☆</span>
+                <br>
+                <span class="q-star" data-score="0">☆</span>
+            </div>
+            <br>
+        </div> -->
+    </div>
+
+    <div class="box result" id="result">
+        <span class="result-title">Your NBTI type is </span>
+        <br>
+        <span class="result-text" id="result-prob-text"></span>
+        <span class="result-text" id="result-equ-text"></span>
+    </div>
+
+    <ul class="filler"></ul>
+
+</body>
+</html>
